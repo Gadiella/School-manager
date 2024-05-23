@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.schoolmanager.controllers.StudentControllers">
+   <children>
+      <AnchorPane prefHeight="404.0" prefWidth="632.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="-2.0" layoutY="-6.0" prefHeight="410.0" prefWidth="260.0" style="-fx-background-color: E033FF;">
+               <children>
+                  <Label alignment="CENTER" text="School Manager" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label text="Logiciel de gestion de gestion d'étudiant" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Propriété de IStock" textFill="#f8f6f6">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Copyrigth 2024 - version 1.0" textFill="#f6f4f4">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="firstfield" layoutX="281.0" layoutY="53.0" prefHeight="25.0" prefWidth="293.0" />
+            <TextField fx:id="lastfield" layoutX="281.0" layoutY="116.0" prefHeight="25.0" prefWidth="293.0" />
+            <Label layoutX="281.0" layoutY="36.0" text="First Name" />
+            <Label layoutX="282.0" layoutY="99.0" text="Last Name" />
+            <Label layoutX="285.0" layoutY="157.0" text="Date of Birth" />
+            <TextField fx:id="placefield" layoutX="281.0" layoutY="232.0" prefHeight="25.0" prefWidth="293.0" />
+            <TextField fx:id="myState" layoutX="281.0" layoutY="285.0" prefHeight="25.0" prefWidth="293.0" />
+            <Label layoutX="281.0" layoutY="215.0" text="Place of Birth " />
+            <Label layoutX="283.0" layoutY="268.0" text="State" />
+            <Button layoutX="364.0" layoutY="339.0" mnemonicParsing="false" onAction="#onsubmitetudiante" text="Soumettre" />
+            <Text layoutX="308.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiche de renseignement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="datepiker" layoutX="285.0" layoutY="174.0" prefHeight="25.0" prefWidth="286.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
