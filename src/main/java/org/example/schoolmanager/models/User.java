@@ -1,6 +1,8 @@
 package org.example.schoolmanager.models;
 
-public class User  {
+import org.example.schoolmanager.interfaces.UserInterfaces;
+
+public class User implements UserInterfaces {
     private int id;
     private String email;
     private String password;
@@ -27,5 +29,15 @@ public class User  {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public void register(User user) {
+
+    }
+
+    @Override
+    public int signIn(User user) {
+        return 0;
     }
 }
